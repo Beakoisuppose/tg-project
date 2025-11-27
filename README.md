@@ -65,7 +65,7 @@ Load (1m): 🟢 0.75 (ядер: 4)
 ```bash
 mkdir -p ~/monitoring && cd ~/monitoring
 nano pooo.py  # вставьте код бота
-chmod +x pooo.py
+chmod +x workfile.py
 
 ```
 ### **2. Настроить конфиг в начале файла**
@@ -90,10 +90,10 @@ After=network.target docker.service
 
 [Service]
 Type=simple
-User=vboxuser
-Group=vboxuser
-WorkingDirectory=/home/vboxuser
-ExecStart=/usr/bin/python3 /home/vboxuser/pooo.py
+User=$youruser
+Group=$your group
+WorkingDirectory=/home/$youruser
+ExecStart=/usr/bin/python3 /home/$youruser/workfile.py
 Restart=always
 RestartSec=10
 StandardOutput=journal
