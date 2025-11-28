@@ -64,7 +64,7 @@ Load (1m): 🟢 0.75 (ядер: 4)
 
 ```bash
 mkdir -p ~/monitoring && cd ~/monitoring
-nano pooo.py  # вставьте код бота
+nano workfile.py  # вставьте код бота
 chmod +x workfile.py
 
 ```
